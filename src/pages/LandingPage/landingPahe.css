@@ -1,0 +1,19 @@
+.landing_page{
+    background: #0B0B0B;
+    background-image: url('../../assets/resources/Noise.svg');
+    position: relative;
+}
+
+.welcome_text{
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #FAFAFA;
+    margin: auto;
+    padding-top: 159px;
+}
+
+.vImages_div{
+    width: 100%;
+}
