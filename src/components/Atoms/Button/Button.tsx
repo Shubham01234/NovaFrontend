@@ -1,7 +1,7 @@
 import React from "react";
 
 interface ButtonProps {
-  color?: "primary" | "secondary " | "third" | "default";
+  color?: "primary" | "secondary" | "third" | "default";
   size?: "small" | "medium" | "large";
   disable?: boolean;
   label: string;
