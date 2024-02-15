@@ -1,6 +1,5 @@
 import React from 'react'
 import './landingPahe.css'
-import Header from '../../components/Header/header'
 import vImage from '../../assets/resources/Line.svg'
 import card from '../../assets/resources/Card.svg'
 import MainButton from '../../components/MainButton'
@@ -8,7 +7,6 @@ import MainButton from '../../components/MainButton'
 export default function LandingPage() {
   return (
     <div className='landing_page'>
-        {/* <Header /> */}
         <p className='welcome_text'>
         WELCOME TO ASTRA NOVA’S <br/> 
         IDENTITY AND LOYALTY PROGRAM
@@ -16,7 +14,7 @@ export default function LandingPage() {
         <div className='vImages_div'>
             <img src={vImage} alt="vImage" style={{width:"100%"}}/>
             <div>
-                <img src={card} alt="card" />
+                <img src={card} alt="card" className='m-auto -translate-y-[137px]'/>
             </div>
         </div>
         <div>
