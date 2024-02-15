@@ -22,6 +22,18 @@ module.exports = {
         xxxxxxl: "48px",
         xxxxxxxl: "54px",
       },
+      colors: {
+        text: {
+          primary: "#FAFAFA",
+          secondary: "#1CF9CF",
+        },
+        background: {
+          primary: "#000000",
+          secondary: "#5765F2",
+          third: "#08C4B3",
+          default: "#1E49E2",
+        },
+      },
       borderWidth: {
         xs: "1px",
         small: "2px",
@@ -58,10 +70,9 @@ module.exports = {
         wrapper: "calc(100vh - 80px)",
       },
       minWidth: {
-        '247': '247px',
+        247: "247px",
       },
     },
     plugins: [],
-}
+  },
 };
-
