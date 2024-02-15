@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: Chakra Petch
   , 'Helvetica Neue',
-    sans-serif;
+    sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #0B0B0B;

@@ -7,12 +7,11 @@
     text-transform: uppercase;
   }
 
-.wallet_div {
+.wallet_div_t {
     gap: 10px;
-    width: 12%;
     cursor: pointer;
   }
-  .wallet_div:hover .center_txt{
+  .wallet_div_t:hover .center_txt{
     color: #1cf9cf;
     cursor: pointer;
   }
