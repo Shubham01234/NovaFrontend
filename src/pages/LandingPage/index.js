@@ -21,7 +21,7 @@ export default function LandingPage() {
             <img src={vImage} alt="vImage" style={{width:"100%"}}/>
         </div>
         <div className='flex items-center justify-around'>
-            <div className='flex flex-col items-start	 gap-8'>
+            <div className='flex flex-col items-start gap-8'>
                 <p className='text-text-primary opacity-[75%] font-bold text-[12px] leading-5'>
                     <span className='text-text-secondary'>The Black Pass</span> is a free platform that <br/>
                         gathers all your information within the <br/> 
@@ -35,13 +35,13 @@ export default function LandingPage() {
             </div>
 
             <div className='text-text-primary flex font-bold text-[10px] opacity-[75%]'>
-                <img src={leftArrow} alt="arrow" className='hover:fill-[#1cf9cf]' style={{ fill: '#000' }}/>
+                <img src={leftArrow} alt="arrow"/>
                 <p>SCROLL TO LEARN MORE</p>
                 <img src={rightArrow} alt="arrow"/>
             </div>
         </div>
 
-        <div className='flex items-center justify-center'>
+        <div className='flex items-center justify-center h-[395px]'>
             <div className='leading-10'>
                 <div className='flex items-center'>
                     <img src={leftGlowArrow} alt="img" className='w-[22px] h-[17px]'/>
@@ -56,7 +56,7 @@ export default function LandingPage() {
                 <img src={lIcon} alt="img"/>
             </div>
 
-            <div className='leading-10 flex flex-col items-center'>
+            <div className='leading-5 flex flex-col items-center translate-y-[69px]'>
                 <div className='translate-y-[75px]'>
                     <p className='text-text-primary uppercase font-bold text-[12px] opacity-[75%] font-inter'>
                         This pass serves as a platform to store and redeem rewards, such as <br/>
@@ -73,6 +73,13 @@ export default function LandingPage() {
                     
                     <img src={bottomLIcon} alt="img" className='-translate-y-[2px]'/>
             </div>
+        </div>
+
+        <div>
+            <div>
+                <p className='uppercase text-[#FAFAFABF]'>step by step</p>
+            </div>
+            <p className='uppercase font-bold text-[35px] leading-10 text-text-primary'>how to get the black pass</p>
         </div>
 
     </div>
