@@ -20,3 +20,8 @@ code {
   background: transparent;
   /* Optional: just make scrollbar invisible */
 }
+
+.bg-img{
+    background-image: url('../src/assets/resources/Noise.svg');
+    position: relative;
+}
