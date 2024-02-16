@@ -72,6 +72,9 @@ module.exports = {
       minWidth: {
         247: "247px",
       },
+      backgroundImage: {
+        blur: "url('/src/assets/resources/noise.png')",
+      },
     },
     plugins: [],
   },
