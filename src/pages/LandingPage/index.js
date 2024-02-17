@@ -11,6 +11,7 @@ import bottomLIcon from '../../assets/resources/bottimCurve.svg'
 import { VIMAGE } from '../../assets/common'
 import { Images } from 'assets/Images'
 import NftCard from '../../components/NftCard/nftCard.tsx'
+import Accordion from '../../components/Accordion/accordion.tsx'
 
 export default function LandingPage() {
   return (
@@ -141,6 +142,29 @@ export default function LandingPage() {
                 <NftCard/>
                 <NftCard/>
                 <NftCard/>
+            </div>
+        </div>
+
+        <div>
+            <p className='uppercase font-bold text-[35px] leading-10 text-text-primary ml-[95px] mb-[65px]'>FREQUENTLY ASKED QUESTIONS</p>
+            <Accordion/>
+        </div>
+
+        <div className='flex items-center justify-around mt-[83px]'>
+            <div className='flex gap-[70px]'>
+                <p className='text-[#FAFAFA4D] font-bold text-[10px]'>COPYRIGHT 2023</p>
+                <p className='text-[#FAFAFA80] font-bold text-[10px]'>TERMS AND CONDITIONS</p>
+                <p className='text-[#FAFAFA80] font-bold text-[10px]'>PRIVACY POLICY</p>
+            </div>
+            <div className='flex items-center gap-[23px]'>
+                <img src={Images.SOCIAL} alt="img" className='w-[13px] h-[7px] opacity-[75%] cursor-pointer'/>
+                <img src={Images.TWITTER} alt="img" className='w-[17px] h-[14px] opacity-[75%] cursor-pointer'/>
+                <img src={Images.INSTA} alt="img" className='w-[16px] h-[16px] opacity-[75%] cursor-pointer'/>
+                <img src={Images.TELIGRAM} alt="img" className='w-[16px] h-[16px] opacity-[75%] cursor-pointer'/>
+                <img src={Images.DISCORD} alt="img" className='w-[17px] h-[13px] opacity-[75%] cursor-pointer'/>
+                <img src={Images.RADDIT} alt="img" className='w-[16px] h-[16px] opacity-[75%] cursor-pointer'/>
+                <img src={Images.LINKEDIN} alt="img" className='w-[15px] h-[15px] opacity-[75%] cursor-pointer'/>
+                <img src={Images.FACEBOOK} alt="img" className='w-[16px] h-[16px] opacity-[75%] cursor-pointer'/>
             </div>
         </div>
 
