@@ -16,7 +16,7 @@ import Accordion from '../../components/Accordion/accordion.tsx'
 export default function LandingPage() {
   return (
     <div className='landing_page'>
-        <p className='welcome_text text-[30px] sm:text-[40px] sm:pt-[90px] sm:pb-[44px] pb-[20px] md:text-[60px] '>
+        <p className='welcome_text text-[30px] sm:text-[40px] pt-[90px] sm:pt-[130px] sm:pb-[44px] pb-[20px] md:text-[60px] '>
         WELCOME TO ASTRA NOVA’S <br/> 
         IDENTITY AND LOYALTY PROGRAM
         </p>
@@ -134,7 +134,7 @@ export default function LandingPage() {
         </div>
 
         {/* NftCards */}
-        <div className='flex flex-col gap-[58px] my-[95px]'>
+        <div className='flex flex-col gap-8 md:gap-[58px] my-[95px]'>
             <div className='relative w-[110px] h-[16px] ml-[40px] md:ml-[40px]  lg:ml-[162px] flex text-center'>
                 <div className="top left"></div>
                 <div className="bottom right"></div>
@@ -151,18 +151,18 @@ export default function LandingPage() {
         </div>
 
         <div>
-            <p className='uppercase font-bold md:text-[35px] sm:text-[25px] text-[20px] leading-10 text-text-primary ml-[40px] sm:ml-[40px] lg:ml-[162px] mb-[65px]'>FREQUENTLY ASKED QUESTIONS</p>
+            <p className='uppercase font-bold md:text-[35px] sm:text-[25px] text-[20px] leading-10 text-text-primary ml-[40px] sm:ml-[40px] lg:ml-[162px] mb-[30px] md:mb-[65px]'>FREQUENTLY ASKED QUESTIONS</p>
             <Accordion/>
         </div>
 
         {/* footer */}
-        <div className='flex items-center justify-around mt-[83px]'>
-            <div className='flex gap-[70px]'>
+        <div className='flex flex-col sm:flex-row items-center justify-around mt-[83px] gap-4'>
+            <div className='flex gap-[20px] sm:gap-[20px] md:gap-[30px] lg:gap-[70px]'>
                 <p className='text-[#FAFAFA4D] font-bold text-[10px]'>COPYRIGHT 2023</p>
                 <p className='text-[#FAFAFA80] font-bold text-[10px]'>TERMS AND CONDITIONS</p>
                 <p className='text-[#FAFAFA80] font-bold text-[10px]'>PRIVACY POLICY</p>
             </div>
-            <div className='flex items-center gap-[23px]'>
+            <div className='flex items-center sm:gap-[10px] md:gap-[15px] lg:gap-[23px] gap-[23px]'>
                 <img src={Images.SOCIAL} alt="img" className='w-[13px] h-[7px] opacity-[75%] cursor-pointer'/>
                 <img src={Images.TWITTER} alt="img" className='w-[17px] h-[14px] opacity-[75%] cursor-pointer'/>
                 <img src={Images.INSTA} alt="img" className='w-[16px] h-[16px] opacity-[75%] cursor-pointer'/>

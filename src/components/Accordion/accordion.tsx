@@ -37,18 +37,18 @@ function Accordion() {
         <div className=' xl:w-[1116px] w-auto mr-[40px] m-auto ml-[40px] md:[40px] lg:ml-[162px] '>
             {sectionsData.map((section, index) => (
                 <div key={index} className='flex flex-col gap-[10px]' style={{ borderTop: "0.75px dashed rgb(250, 250, 250, 0.4)", borderBottom:index - 1 ? "0.75px dashed rgb(250, 250, 250, 0.4)" : "" }}>
-                    <div className='flex items-center justify-between mt-5 mb-5'
+                    <div className={`flex items-center justify-between mt-5 ${openSections[index] ? "mb-1" : "mb-5"} `}
                         onClick={() => handleOpenSection(index)}>
                         <div className='flex items-center gap-2'>
                             <img src={openSections[index] ? Images.ACCORDIAN_GARROW : Images.ACCORDIAN_ARROW } alt="arrow" className='w-[14px] h-[14px]' />
-                            <p className='font-bold text-[18px] text-text-primary opacity-[75%] uppercase'>
+                            <p className='font-bold text-[12px] sm:text-[14px] md:text-[18px] text-text-primary opacity-[75%] uppercase'>
                                 {section.title}
                             </p>
                         </div>
-                            <img src={ openSections[index] ? Images.SUB : Images.ADD} alt="subtract" className={`w-[22px] ${openSections[index] ? "h-[2px]" : "h-[22px]" } cursor-pointer`} />
+                            <img src={ openSections[index] ? Images.SUB : Images.ADD} alt="subtract" className={` w-[16px] md:w-[22px] ${openSections[index] ? "h-[2px]" : "w-[16px] md:h-[22px]" } cursor-pointer`} />
                     </div>
                     {openSections[index] &&
-                        <p className='font-bold text-[12px] text-text-primary opacity-[75%] w-[523px] mb-5'>
+                        <p className='font-bold text-[12px] text-text-primary opacity-[75%] w-auto md:w-[523px] mb-5'>
                             {section.content}
                         </p>
                     }
