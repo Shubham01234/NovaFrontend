@@ -16,7 +16,7 @@ import Accordion from '../../components/Accordion/accordion.tsx'
 export default function LandingPage() {
   return (
     <div className='landing_page'>
-        <p className='welcome_text'>
+        <p className='welcome_text text-[30px] sm:text-[40px] sm:pt-[90px] sm:pb-[44px] pb-[20px] md:text-[60px] '>
         WELCOME TO ASTRA NOVA’S <br/> 
         IDENTITY AND LOYALTY PROGRAM
         </p>
@@ -25,7 +25,9 @@ export default function LandingPage() {
             <img src={vImage} alt="vImage" style={{width:"100%"}}/>
             {/* <VIMAGE style={{width:"100%"}}/> */}
         </div>
-        <div className='flex items-center justify-around'>
+
+        {/* Card */}
+        <div className='flex items-center justify-around px-[25px]'>
             <div className='flex flex-col items-start gap-8'>
                 <p className='text-text-primary opacity-[75%] font-bold text-[12px] leading-5'>
                     <span className='text-text-secondary'>The Black Pass</span> is a free platform that <br/>
@@ -45,16 +47,17 @@ export default function LandingPage() {
                 <img src={rightArrow} alt="arrow"/>
             </div>
         </div>
-
-        <div className='flex items-center justify-center h-[395px]'>
+        
+        {/* Questions */}
+        <div className='flex items-center justify-center h-[395px] px-[25px]'>
             <div className='leading-10'>
                 <div className='flex items-center'>
                     <img src={leftGlowArrow} alt="img" className='w-[22px] h-[17px]'/>
-                    <p className='text-text-primary uppercase font-bold text-[35px]'>
+                    <p className='text-text-primary uppercase font-bold md:text-[35px] sm:text-[25px]'>
                         Complete multiple quests
                     </p>
                 </div>
-                <p className='text-text-primary uppercase font-bold text-[35px]'>
+                <p className='text-text-primary uppercase font-bold md:text-[35px] sm:text-[25px]'>
                     and collect as many shards as <br/>
                     you can.
                 </p>
@@ -79,14 +82,15 @@ export default function LandingPage() {
                     <img src={bottomLIcon} alt="img" className='-translate-y-[2px]'/>
             </div>
         </div>
-
-        <div className='flex flex-col gap-[78px]'>
-            <div className='relative w-[110px] h-[16px] ml-[95px] flex text-center'>
+        
+        {/* Steps */}
+        <div className='flex flex-col gap-[78px] my-[95px]'>
+            <div className='relative w-[110px] h-[16px] ml-[40px] md:ml-[40px]  lg:ml-[162px] flex text-center'>
                 <div className="top left"></div>
                 <div className="bottom right"></div>
                 <p className='uppercase text-[#FAFAFABF] text-[10px] bg-[#FAFAFA0D] w-[110px]'>step by step</p>
             </div>
-            <p className='uppercase font-bold text-[35px] leading-10 text-text-primary ml-[95px]'>how to get the black pass</p>
+            <p className='uppercase font-bold md:text-[35px] leading-10 text-text-primary ml-[40px] md:ml-[40px] lg:ml-[162px] sm:text-[25px] text-[20px]'>how to get the black pass</p>
             <div>
                 <img src={Images.HLINE} alt="img" className='w-full'/>
 
@@ -129,15 +133,16 @@ export default function LandingPage() {
             
         </div>
 
-        <div className='flex flex-col gap-[58px]'>
-            <div className='relative w-[110px] h-[16px] ml-[95px] flex text-center'>
+        {/* NftCards */}
+        <div className='flex flex-col gap-[58px] my-[95px]'>
+            <div className='relative w-[110px] h-[16px] ml-[40px] md:ml-[40px]  lg:ml-[162px] flex text-center'>
                 <div className="top left"></div>
                 <div className="bottom right"></div>
                 <p className='uppercase text-[#FAFAFABF] text-[10px] bg-[#FAFAFA0D] w-[110px]'>THE BENEFITS</p>
             </div>
-            <p className='uppercase font-bold text-[35px] leading-10 text-text-primary ml-[95px]'>BENEFITS OF HAVING THE BLACK PASS</p>
+            <p className='uppercase font-bold md:text-[35px] sm:text-[25px] text-[20px] leading-10 text-text-primary ml-[40px] md:ml-[40px]  lg:ml-[162px]'>BENEFITS OF HAVING THE BLACK PASS</p>
 
-            <div className='flex ml-[95px] gap-5'>
+            <div className='grid grid-cols-1 m-auto sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ml-[40px] md:ml-[40px] lg:ml-[162px] gap-5'>
                 <NftCard/>
                 <NftCard/>
                 <NftCard/>
@@ -146,10 +151,11 @@ export default function LandingPage() {
         </div>
 
         <div>
-            <p className='uppercase font-bold text-[35px] leading-10 text-text-primary ml-[95px] mb-[65px]'>FREQUENTLY ASKED QUESTIONS</p>
+            <p className='uppercase font-bold md:text-[35px] sm:text-[25px] text-[20px] leading-10 text-text-primary ml-[40px] sm:ml-[40px] lg:ml-[162px] mb-[65px]'>FREQUENTLY ASKED QUESTIONS</p>
             <Accordion/>
         </div>
 
+        {/* footer */}
         <div className='flex items-center justify-around mt-[83px]'>
             <div className='flex gap-[70px]'>
                 <p className='text-[#FAFAFA4D] font-bold text-[10px]'>COPYRIGHT 2023</p>

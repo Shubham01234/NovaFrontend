@@ -34,7 +34,7 @@ function Accordion() {
     };
 
     return (
-        <div className='w-[1116px] m-auto'>
+        <div className=' xl:w-[1116px] w-auto mr-[40px] m-auto ml-[40px] md:[40px] lg:ml-[162px] '>
             {sectionsData.map((section, index) => (
                 <div key={index} className='flex flex-col gap-[10px]' style={{ borderTop: "0.75px dashed rgb(250, 250, 250, 0.4)", borderBottom:index - 1 ? "0.75px dashed rgb(250, 250, 250, 0.4)" : "" }}>
                     <div className='flex items-center justify-between mt-5 mb-5'

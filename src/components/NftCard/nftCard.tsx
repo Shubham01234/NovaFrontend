@@ -3,10 +3,10 @@ import { Images } from '../../assets/Images'
 
 export default function NftCard({text, des}: any) {
     return (
-      <div className="relative w-[267px] h-[326px] cursor-pointer hover:text-[#1cf9cf] bg-img">
+      <div className="relative w-[267px] lg:w-[267px] md:w-[230px] sm:w-[230px] h-[326px] cursor-pointer hover:text-[#1cf9cf] bg-img">
           <div className="top left"></div>
           <div className="bottom right"></div>
-          <div className="relative w-[267px] h-[326px] flex flex-col items-center justify-around " 
+          <div className="relative lg:w-[267px] md:w-[230px] sm:w-[230px] h-[326px] flex flex-col items-center justify-around " 
           style={{
               background: `linear-gradient(
                 0deg,
@@ -17,7 +17,7 @@ export default function NftCard({text, des}: any) {
               border: '0.75px dashed #fafafa4d',
             }}
           >
-            <img src={Images.MARKGROUP} alt="image" className="w-[235px] h-[108px]" />
+            <img src={Images.MARKGROUP} alt="image" className="sm:w-[214px] lg:w-[235px] md:w-[214px] h-[108px]" />
             <p className="font-bold text-[18px] leading-5 text-text-primary uppercase text-center hover:text-text-secondary">
               One platform,
               <br /> Multiple features
