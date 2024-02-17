@@ -1,13 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+// import App from './App';
 import reportWebVitals from './reportWebVitals';
+import App from './pages/App/App.tsx'
+import Layout from './pages/App/Layout.tsx'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-      <App />
+    <Layout>
+      <App/>
+    </Layout>
   </React.StrictMode>
 );
 

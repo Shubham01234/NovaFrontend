@@ -2,16 +2,17 @@
     background: #0B0B0B;
     background-image: url('../../assets/resources/Noise.svg');
     position: relative;
+    padding-bottom: 20px;
 }
 
 .welcome_text{
     font-weight: 700;
-    font-size: 60px;
+    /* font-size: 60px; */
     line-height: 60px;
     text-align: center;
     color: #FAFAFA;
     margin: auto;
-    padding-top: 159px;
+    /* padding-top: 130px; */
 }
 
 .vImages_div{

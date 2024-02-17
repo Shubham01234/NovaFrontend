@@ -1,7 +1,7 @@
 import React from 'react'
 import './mainBtn.css'
 
-export default function MainButton({text}) {
+export default function MainButton({text}:any) {
   return (
     <div className="wallet_div_t center">
       <div className="outer_circle center">

@@ -1,4 +1,18 @@
 export const Images = {
   SIGNUPBACKGROUND: require("./resources/signUpBg.png"),
   BLUR: require("./resources/noise.png"),
+  HLINE: require("./resources/horizontalLine.png"),
+  MARKGROUP: require("./resources/Mask group.png"),
+  ADD: require("./resources/add.png"),
+  SUB: require("./resources/minus.png"),
+  ACCORDIAN_GARROW: require("./resources/accordianArrow.png"),
+  ACCORDIAN_ARROW: require("./resources/accordianNormalArrow.png"),
+  SOCIAL: require("./resources/social.png"),
+  TWITTER: require("./resources/twitter.png"),
+  INSTA: require("./resources/insta.png"),
+  TELIGRAM: require("./resources/teligram.png"),
+  DISCORD: require("./resources/discord.png"),
+  RADDIT: require("./resources/raddit.png"),
+  LINKEDIN: require("./resources/linkedin.png"),
+  FACEBOOK: require("./resources/facebook.png"),
 };
