@@ -1,27 +1,7 @@
 .header_div {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #181818;
     border-bottom: 0.75px solid rgba(250, 250, 250, 0.3);
-    padding:10px 20px;
     background-image: url('../../assets/resources/Noise.svg');
   }
-  
-  .astro_icon {
-    width: 24px;
-  }
-  
-  .center_txt {
-    font-weight: 700;
-    font-size: 10px;
-    line-height: 13px;
-    letter-spacing: 15%;
-    color: #FAFAFA;
-  }
-  /* .center_txt:hover{
-    color: #1cf9cf;
-  } */
   
   .wallet_div {
     gap: 10px;

@@ -19,7 +19,17 @@ function Fraction() {
 
   return (
     <div>
-        <HeroSection bgSrc={fraction === "COMBAT" ? Images.COMBAT_BG : fraction === "DIPLOMACY" ? Images.DIPLOMACY_BG : fraction === "CRAFTING" ? Images.CRAFTING_BG : fraction === "EXPLORATION" ? Images.EXPLORATION_BG : Images.COMBAT_BG} items={"end"} zIndex={"40"}>
+        <HeroSection bgSrc={fraction === "COMBAT" ? 
+            Images.COMBAT_BG : 
+            fraction === "DIPLOMACY" ? 
+            Images.DIPLOMACY_BG : 
+            fraction === "CRAFTING" ? 
+            Images.CRAFTING_BG : 
+            fraction === "EXPLORATION" 
+            ? Images.EXPLORATION_BG : 
+            Images.COMBAT_BG
+            } items={"end"}
+        >
             <div>
                 <p className='text-text-primary font-bold text-[18px] text-center'>CHOOSE YOUR FACTION</p>
                 <div className='flex gap-[32px] mt-6 pb-9'>
