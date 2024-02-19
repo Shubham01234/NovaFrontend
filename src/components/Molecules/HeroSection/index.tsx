@@ -1,5 +1,4 @@
 import { Images } from "assets/Images";
-import Header from "components/Header/header";
 import React from "react";
 
 interface HeroSectionProps {
@@ -12,16 +11,15 @@ export const HeroSection = ({ bgSrc, children }: HeroSectionProps) => {
 
   return (
     <div>
-      <Header />
       <div className="h-100vh w-full absolute ">
         <img
-          className="h-full w-full object-fill relative z-30"
+          className="h-full w-full object-fill relative z-10"
           src={Images.BLUR}
           alt=""
         />
       </div>
       <div className={`${additionalStyles} `}>
-        <div className="absolute z-20 flex justify-center items-center min-h-[90vh] w-full">
+        <div className="absolute flex justify-center items-center min-h-[90vh] w-full">
           {children}
         </div>
         <div className=" h-100vh p-5">
