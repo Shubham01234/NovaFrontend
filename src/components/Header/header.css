@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: space-between;
     background: #181818;
-    border-bottom: 0.75px solid #fafafa;
+    border-bottom: 0.75px solid rgba(250, 250, 250, 0.3);
     padding:10px 20px;
     background-image: url('../../assets/resources/Noise.svg');
   }
