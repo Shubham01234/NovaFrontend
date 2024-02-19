@@ -77,6 +77,9 @@ module.exports = {
       backgroundImage: {
         blur: "url('/src/assets/resources/noise.png')",
       },
+      fontFamily: {
+        sans: ["Inter", "sans-serif"],
+      }
     },
     plugins: [],
   },

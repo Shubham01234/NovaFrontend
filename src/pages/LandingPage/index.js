@@ -29,7 +29,7 @@ export default function LandingPage() {
         {/* Card */}
         <div className='flex items-center justify-around px-[25px]'>
             <div className='flex flex-col items-start gap-8'>
-                <p className='text-text-primary opacity-[75%] font-bold text-[12px] leading-5'>
+                <p className='text-text-primary opacity-[75%] font-bold text-[12px] leading-5 font-sans'>
                     <span className='text-text-secondary'>The Black Pass</span> is a free platform that <br/>
                         gathers all your information within the <br/> 
                         Astra Nova RPG universe.
@@ -41,7 +41,7 @@ export default function LandingPage() {
                 <img src={card} alt="card" className='m-auto -translate-y-[137px]'/>
             </div>
 
-            <div className='text-text-primary flex font-bold text-[10px] opacity-[75%]'>
+            <div className='text-text-primary flex font-bold text-[10px] opacity-[30%] gap-2'>
                 <img src={leftArrow} alt="arrow"/>
                 <p>SCROLL TO LEARN MORE</p>
                 <img src={rightArrow} alt="arrow"/>
@@ -64,17 +64,17 @@ export default function LandingPage() {
                 <img src={lIcon} alt="img"/>
             </div>
 
-            <div className='leading-5 flex flex-col items-end translate-y-[69px]'>
+            <div className='leading-5 flex flex-col items-center translate-y-[70px]'>
                 <div className=''>
-                    <p className='text-text-primary uppercase font-bold text-[12px] opacity-[75%] font-inter'>
+                    <p className='text-text-primary text-[12px] opacity-[75%] font-sans'>
                         This pass serves as a platform to store and redeem rewards, such as <br/>
                         Shards through task completion and social quests. During the game  <br/>
                         demo stage, you can accumulate Shards to later convert them into <br/>
                         $RVV (Revive Token).
                     </p>
-                    <p className='text-text-primary uppercase font-bold text-[12px] opacity-[75%] font-inter translate-y-[52px]'>
+                    <p className='text-text-primary text-[12px] opacity-[75%] font-sans translate-y-[44px]'>
                         Think of the Black Pass as a digital profile within Astra Nova, <br/>
-                        preserving a player's on-chain achievements indefinitely.<span className='text-text-secondary'> Only Black <br/>
+                        preserving a player's on-chain achievements indefinitely.<span className='text-text-secondary font-bold'> Only Black <br/>
                         Pass holders will have access to claim the upcoming $RVV Airdrop. </span>
                     </p>
                 </div>
@@ -102,7 +102,7 @@ export default function LandingPage() {
                             </div>
                         
                         <p className='uppercase font-bold text-[18px] text-text-primary leading-5'>Connect a <br/> Hedera Wallet</p>
-                        <p className='font-bold text-[12px] text-text-primary leading-5 opacity-[75%]'>If you don’t have one, create it <span className='text-text-secondary'>here.</span></p>
+                        <p className='text-[12px] text-text-primary leading-5 opacity-[75%] font-sans'>If you don’t have one, create it <span className='text-text-secondary underline'>here</span>.</p>
                     </div>
     
                     {/* second */}
@@ -111,7 +111,7 @@ export default function LandingPage() {
                             <p className='font-bold text-[18px] text-text-primary leading-5'>02</p>
                         </div>
                         <p className='uppercase font-bold text-[18px] text-text-primary leading-5'>Mint the <br/> Black pass</p>
-                        <p className='font-bold text-[12px] text-text-primary leading-5 opacity-[75%]'>
+                        <p className='text-[12px] text-text-primary leading-5 opacity-[75%] font-sans'>
                             Black Pass is a non-transferable Soulbound <br/>
                             Token (SBT) associated with your wallet and <br/>
                             will be forever in your wallet.To ensure a <br/>
@@ -126,7 +126,7 @@ export default function LandingPage() {
                             <p className='font-bold text-[18px] text-text-primary leading-5'>03</p>
                         </div>
                         <p className='uppercase font-bold text-[18px] text-text-primary leading-5'>Begin <br/> your journey</p>
-                        <p className='font-bold text-[12px] text-text-primary leading-5 opacity-[75%]'>Start participating in the quests and collecting <br/> your rewards.</p>
+                        <p className='text-[12px] text-text-primary leading-5 opacity-[75%] font-sans'>Start participating in the quests and collecting <br/> your rewards.</p>
                     </div>
                 </div>
             </div>
