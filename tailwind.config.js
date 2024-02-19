@@ -28,12 +28,16 @@ module.exports = {
         text: {
           primary: "#FAFAFA",
           secondary: "#1CF9CF",
+          light : "#FAFAFA66" ,
+          dark : "#FAFAFABF",
         },
         background: {
           primary: "#000000",
           secondary: "#5765F2",
           third: "#08C4B3",
           default: "#1E49E2",
+          light : "#FAFAFA05" ,
+          blacklight : "#181818F2" ,
         },
       },
       borderWidth: {
@@ -55,6 +59,12 @@ module.exports = {
         xxxxxxl: "20px",
         full: "9999px",
       },
+      borderColor:{
+        primary: "#FAFAFA",
+        lightprimary : "#FAFAFA4D" ,
+        secondary: "#1CF9CF",
+        light : "#181818F2"
+      },
       boxShadow: {
         "primary-button": "0px 4px 12px 0px rgba(89, 37, 254, 0.25)",
         E1: "1px 1px 5px 0px rgba(0, 0, 0, 0.14)",
@@ -73,6 +83,9 @@ module.exports = {
       },
       minWidth: {
         247: "247px",
+      },
+      height:{
+        '100vh': "calc(100vh - 70px)",
       },
       backgroundImage: {
         blur: "url('/src/assets/resources/noise.png')",
