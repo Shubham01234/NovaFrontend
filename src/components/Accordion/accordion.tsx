@@ -48,7 +48,7 @@ function Accordion() {
                             <img src={ openSections[index] ? Images.SUB : Images.ADD} alt="subtract" className={` w-[16px] md:w-[22px] ${openSections[index] ? "h-[2px]" : "w-[16px] md:h-[22px]" } cursor-pointer`} />
                     </div>
                     {openSections[index] &&
-                        <p className='font-bold text-[12px] text-text-primary opacity-[75%] w-auto md:w-[523px] mb-5'>
+                        <p className='text-[12px] text-text-primary opacity-[75%] w-auto md:w-[523px] mb-5 font-sans'>
                             {section.content}
                         </p>
                     }
