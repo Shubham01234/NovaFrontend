@@ -37,7 +37,7 @@ module.exports = {
           third: "#08C4B3",
           default: "#1E49E2",
           light : "#FAFAFA05" ,
-          blacklight : "#181818F2" ,
+          blacklight : "#181818E6" ,
         },
       },
       borderWidth: {
@@ -90,6 +90,9 @@ module.exports = {
       backgroundImage: {
         blur: "url('/src/assets/resources/noise.png')",
       },
+      fontFamily: {
+        sans: ["Inter", "sans-serif"],
+      }
     },
     plugins: [],
   },
