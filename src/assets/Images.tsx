@@ -15,4 +15,12 @@ export const Images = {
   RADDIT: require("./resources/raddit.png"),
   LINKEDIN: require("./resources/linkedin.png"),
   FACEBOOK: require("./resources/facebook.png"),
+  COMBAT_BG: require("./resources/combatBg.png"),
+  DIPLOMACY_BG: require("./resources/diplomacyBg.png"),
+  CRAFTING_BG:  require("./resources/craftingBg.png"),
+  EXPLORATION_BG: require("./resources/explorationBg.png"),
+  COMBAT: require("./resources/Combat.png"),
+  DIPLOMACY: require("./resources/Diplomacy.png"),
+  CRAFTING:  require("./resources/Crafting.png"),
+  EXPLORATION: require("./resources/Exploration.png"),
 };
