@@ -28,7 +28,8 @@ function Fraction() {
             fraction === "EXPLORATION" 
             ? Images.EXPLORATION_BG : 
             Images.COMBAT_BG
-            } items={"end"}
+            } 
+            end={true}
         >
             <div>
                 <p className='text-text-primary font-bold text-[18px] text-center'>CHOOSE YOUR FACTION</p>
