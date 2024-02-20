@@ -13,7 +13,6 @@ interface ButtonProps {
   type?: "submit" | "button" | "reset" | undefined;
   variant?: "standard" | "line";
   icon?: string | any;
-  parentBgColor: string;
 }
 
 export const Button = ({
@@ -27,32 +26,27 @@ export const Button = ({
   className = "",
   loading = false,
   type = "button",
-  parentBgColor,
   ...props
 }: ButtonProps) => {
   const sizeValues = {
     small: "h-7 min-w-[353px]",
     medium: "h-8 min-w-[353px]",
-    large: "h-10 min-w-[353px]",
+    large: "h-9 min-w-[353px]",
   };
 
   const colorValues = {
     primary:
-      variant === "standard"
-        ? "bg-background-primary text-text-primary"
-        : "text-light-primary-500 hover:text-text-primary",
+      variant === "standard" &&
+         "bg-background-primary text-text-primary font-semibold" ,
     secondary:
-      variant === "standard"
-        ? "bg-background-secondary text-dark-primary-500"
-        : "text-light-gray-300 hover:text-text-primary",
+      variant === "standard" &&
+         "bg-background-secondary text-text-primary font-semibold" ,
     default:
-      variant === "standard"
-        ? "bg-background-default text-text-primary"
-        : "text-text-primary hover:text-text-primary",
+      variant === "standard" &&
+         "bg-background-default text-text-primary font-semibold" ,
     third:
-      variant === "standard"
-        ? "bg-background-third text-text-primary"
-        : "text-text-primary hover:bg-light-primary-default",
+      variant === "standard" &&
+         "bg-background-third text-text-primary font-semibold" ,
   };
 
   const variantValues = {
@@ -62,28 +56,27 @@ export const Button = ({
         ? "bg-light-gray-25 text-light-gray-75"
         : colorValues[color] +
           `${
-            color === "default"
+            color === "default" 
               ? " hover:bg-danger-500 hover:text-white"
-              : " hover:bg-light-primary-hover hover:text-white"
-          }`
+              : " "
+          }
+          `
     } ${sizeValues[size]}`,
     line: `${
       disable || loading ? "text-dark-secondary-300" : colorValues[color]
     } h-8 min-w-max justify-start`,
   };
 
-  const additionalStyles = ` before:content-[''] before:absolute before:left-0 before:top-0 before:w-0 before:h-0 before:border-t-[20px] before:border-t-[${parentBgColor}] before:border-r-transparent before:border-r-[20px] after:content-['']  after:absolute after:right-0 after:bottom-0 after:w-0 after:h-0 after:border-t-[20px] after:border-t-transparent after:border-r-[20px] after:border-r-[${parentBgColor}]`;
-
   return (
     <button
       type={type}
-      className={`flex items-center relative text-sm ${
+      className={`flex items-center relative text-xs  ${
         variantValues[variant]
       } ${sizeValues[size]} ${
         disable || loading ? "cursor-not-allowed" : "cursor-pointer"
-      } ${icon ? "gap-1" : ""} ${className} ${additionalStyles} `}
+      } ${icon ? "gap-1" : ""} ${className} `}
       disabled={loading ? true : disable}
-      style={{ ...style }}
+      style={{ ...style , clipPath : "polygon(4% 0, 100% 0, 100% 63%, 96% 100%, 0 100%, 0 40%)" }}
       {...props}
     >
       {loading ? (

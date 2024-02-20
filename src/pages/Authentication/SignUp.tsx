@@ -38,7 +38,7 @@ export const SignUp = () => {
               </Typography>
               <Textfield placeHolder="Select NFT from Hedera wallet" />
               <div className="flex justify-center items-center mt-2">
-                <CircleButton />
+                <CircleButton  label="CONTINUE"/>
               </div>
             </div>
           </div>

@@ -9,6 +9,7 @@ interface CircleButtonProps {
   className?: string;
   loading?: boolean;
   type?: "button" | "submit" | "reset" | undefined;
+  label : string ;
 }
 
 export const CircleButton = ({
@@ -17,6 +18,7 @@ export const CircleButton = ({
   className = "",
   loading = false,
   type = "button",
+  label,
   ...props
 }: CircleButtonProps) => {
   const [isHover, setisHover] = useState(false);
@@ -38,8 +40,8 @@ export const CircleButton = ({
           )}
         </div>
       </button>
-      <Typography variant="p" font="regular" isIcon={false}>
-        CONTINUE
+      <Typography variant="p" font="bold" isIcon={false}>
+        {label}
       </Typography>
     </div>
   );

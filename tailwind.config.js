@@ -63,7 +63,8 @@ module.exports = {
         primary: "#FAFAFA",
         lightprimary : "#FAFAFA4D" ,
         secondary: "#1CF9CF",
-        light : "#181818F2"
+        light : "#181818F2",
+        blacklight : "#181818E8" ,
       },
       boxShadow: {
         "primary-button": "0px 4px 12px 0px rgba(89, 37, 254, 0.25)",
